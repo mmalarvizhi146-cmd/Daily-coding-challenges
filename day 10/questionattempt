@@ -1,1 +1,19 @@
+mport java.util.Scanner;
+public class questionattempt{
+    public static void main(String[]args){
+        Scanner sc =new Scanner(System.in);
+        int count=0;
+        for(int i=1;i<=10;i++){
+            System .out.print("answer question no"+i+ ":");
+            String ans =sc.next();
+            if(ans.equals("skip")){
+                continue;
 
+            }
+            count++;
+       }
+       System.out.print("attempted questions:" +count);
+
+
+    }
+}
